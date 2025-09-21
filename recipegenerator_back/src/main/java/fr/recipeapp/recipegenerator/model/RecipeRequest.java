@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RecipeRequest {
     private List<String> ingredients;
-    public String dietaryResstrictions;
+    public String dietaryRestrictions;
     private String cuisine;
     private Integer servings;
 
@@ -20,10 +20,10 @@ public class RecipeRequest {
         this.ingredients = ingredients;
     }
     public String getDietaryResstrictions() {
-        return dietaryResstrictions;
+        return dietaryRestrictions;
     }
     public void setDietaryResstrictions(String dietaryResstrictions) {
-        this.dietaryResstrictions = dietaryResstrictions;
+        this.dietaryRestrictions = dietaryResstrictions;
     }
     public String getCuisine() {
         return cuisine;
@@ -37,5 +37,13 @@ public class RecipeRequest {
     public void setServings(Integer servings) {
         this.servings = servings;
     }
-    
+    @Override
+    public String toString() {
+        return "RecipeRequest{" +
+                "ingredients=" + ingredients +
+                ", dietaryRestrictions='" + dietaryRestrictions + '\'' +
+                ", cuisine='" + cuisine + '\'' +
+                ", servings=" + servings +
+                '}';
+    }
 }
