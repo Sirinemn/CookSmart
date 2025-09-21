@@ -1,0 +1,46 @@
+### Fichiers du Backend (Spring Boot) ###
+/recipegenerator_back/target/
+/recipegenerator_back/.mvn/wrapper/maven-wrapper.jar
+/recipegenerator_back/.apt_generated
+/recipegenerator_back/.classpath
+/recipegenerator_back/.factorypath
+/recipegenerator_back/.project
+/recipegenerator_back/.settings
+/recipegenerator_back/.springBeans
+/recipegenerator_back/.sts4-cache
+/recipegenerator_back/.idea/
+/recipegenerator_back/*.iws
+/recipegenerator_back/*.iml
+/recipegenerator_back/*.ipr
+/recipegenerator_back/.vscode/
+/recipegenerator_back/application.properties
+/recipegenerator_back/application.yml
+/recipegenerator_back/.env
+
+### Fichiers du Frontend (Angular) ###
+/recipegenerator-front/dist/
+/recipegenerator-front/tmp/
+/recipegenerator-front/out-tsc/
+/recipegenerator-front/bazel-out/
+/recipegenerator-front/node_modules/
+/recipegenerator-front/npm-debug.log
+/recipegenerator-front/yarn-error.log
+/recipegenerator-front/.idea/
+/recipegenerator-front/.c9/
+/recipegenerator-front/*.launch
+/recipegenerator-front/.settings/
+/recipegenerator-front/*.sublime-workspace
+/recipegenerator-front/.vscode/*
+/recipegenerator-front/.history/*
+/recipegenerator-front/.angular/cache/
+/recipegenerator-front/.sass-cache/
+/recipegenerator-front/connect.lock
+/recipegenerator-front/coverage/
+/recipegenerator-front/libpeerconnection.log
+/recipegenerator-front/testem.log
+/recipegenerator-front/typings/
+
+### Fichiers globaux et du système ###
+.DS_Store
+Thumbs.db
+.vscode/
