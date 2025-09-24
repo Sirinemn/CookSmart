@@ -18,7 +18,8 @@ public class RecipeResponse {
         this.recipeName = recipeName;
         this.description = description;
     }
-
+    public RecipeResponse() {
+    }
     // Getters et Setters
     public String getRecipeName() {
         return recipeName;
