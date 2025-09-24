@@ -19,11 +19,11 @@ public class RecipeRequest {
     public void setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
     }
-    public String getDietaryResstrictions() {
+    public String getDietaryRestrictions() {
         return dietaryRestrictions;
     }
-    public void setDietaryResstrictions(String dietaryResstrictions) {
-        this.dietaryRestrictions = dietaryResstrictions;
+    public void setDietaryRestrictions(String dietaryRestrictions) {
+        this.dietaryRestrictions = dietaryRestrictions;
     }
     public String getCuisine() {
         return cuisine;
