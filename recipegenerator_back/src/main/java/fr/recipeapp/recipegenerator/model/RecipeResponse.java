@@ -3,30 +3,35 @@ package fr.recipeapp.recipegenerator.model;
 import java.util.List;
 
 public class RecipeResponse {
-    private String recipeName;
+    private String title;
     private String description;
     private List<String> ingredients;
     private List<String> instructions;
     private String cookingTime;
     private String difficulty;
-    private Integer servings;
-    private List<String> missingIngredients;
-    private List<String> alternativeIngredients;
-    private String tips;
+    private List<String> missingIngredients; // ingrédients manquants
+    private List<String> alternativeRecipes; // suggestions alternatives
+    private boolean canMakeWithAvailableIngredients;
 
-    public RecipeResponse(String recipeName, String description) {
-        this.recipeName = recipeName;
-        this.description = description;
-    }
     public RecipeResponse() {
     }
-    // Getters et Setters
-    public String getRecipeName() {
-        return recipeName;
+
+    public RecipeResponse(String title, String description, List<String> ingredients,
+                          List<String> instructions, String cookingTime, String difficulty) {
+        this.title = title;
+        this.description = description;
+        this.ingredients = ingredients;
+        this.instructions = instructions;
+        this.cookingTime = cookingTime;
+        this.difficulty = difficulty;
     }
 
-    public void setRecipeName(String recipeName) {
-        this.recipeName = recipeName;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -69,14 +74,6 @@ public class RecipeResponse {
         this.difficulty = difficulty;
     }
 
-    public Integer getServings() {
-        return servings;
-    }
-
-    public void setServings(Integer servings) {
-        this.servings = servings;
-    }
-
     public List<String> getMissingIngredients() {
         return missingIngredients;
     }
@@ -85,35 +82,34 @@ public class RecipeResponse {
         this.missingIngredients = missingIngredients;
     }
 
-    public List<String> getAlternativeIngredients() {
-        return alternativeIngredients;
+    public List<String> getAlternativeRecipes() {
+        return alternativeRecipes;
     }
 
-    public void setAlternativeIngredients(List<String> alternativeIngredients) {
-        this.alternativeIngredients = alternativeIngredients;
+    public void setAlternativeRecipes(List<String> alternativeRecipes) {
+        this.alternativeRecipes = alternativeRecipes;
     }
 
-    public String getTips() {
-        return tips;
+    public boolean isCanMakeWithAvailableIngredients() {
+        return canMakeWithAvailableIngredients;
     }
 
-    public void setTips(String tips) {
-        this.tips = tips;
+    public void setCanMakeWithAvailableIngredients(boolean canMakeWithAvailableIngredients) {
+        this.canMakeWithAvailableIngredients = canMakeWithAvailableIngredients;
     }
 
     @Override
     public String toString() {
         return "RecipeResponse{" +
-                "recipeName='" + recipeName + '\'' +
+                "title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", ingredients=" + ingredients +
                 ", instructions=" + instructions +
                 ", cookingTime='" + cookingTime + '\'' +
                 ", difficulty='" + difficulty + '\'' +
-                ", servings=" + servings +
                 ", missingIngredients=" + missingIngredients +
-                ", alternativeIngredients=" + alternativeIngredients +
-                ", tips='" + tips + '\'' +
+                ", alternativeRecipes=" + alternativeRecipes +
+                ", canMakeWithAvailableIngredients=" + canMakeWithAvailableIngredients +
                 '}';
     }
 }
