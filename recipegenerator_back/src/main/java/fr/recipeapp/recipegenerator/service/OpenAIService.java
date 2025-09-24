@@ -18,10 +18,10 @@ import java.util.Map;
 @Service
 public class OpenAIService {
 
-    @Value("${openai.api-key}")
+    @Value("${openai.api.key}")
     private String apiKey;
 
-    @Value("${openai.api-url}")
+    @Value("${openai.api.url}")
     private String apiUrl;
 
     private final WebClient webClient;
